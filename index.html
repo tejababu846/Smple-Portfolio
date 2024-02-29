@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+        /* Custom styles for the navigation bar */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #4c51bf;
+            color: #ffffff;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        nav h2 {
+            font-size: 1.5rem;
+            /* Responsive font size */
+            font-weight: bold;
+            margin: 0;
+            /* Remove default margin */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #9f7aea;
+        }
+
+        /* Other styles */
+        section {
+            padding: 2rem 0;
+            /* Responsive padding */
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            /* Responsive font size */
+            font-weight: bold;
+            margin-bottom: 1rem;
+            /* Responsive margin */
+        }
+
+        section p {
+            text-align: center;
+            color: #4a5568;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            /* Adjustments for medium and larger screens */
+            header {
+                padding: 0rem 2rem;
+                /* Responsive padding */
+            }
+
+            nav h2 {
+                font-size: 2rem;
+                /* Responsive font size */
+            }
+
+            nav ul {
+                gap: 3rem;
+                /* Responsive gap */
+            }
+
+            section {
+                padding: 3rem 0;
+                /* Responsive padding */
+            }
+
+            section h2 {
+                font-size: 2.5rem;
+                /* Responsive font size */
+                margin-bottom: 2rem;
+                /* Responsive margin */
+            }
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar Section -->
+    <header>
+        <div class="container mx-auto">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="bg-indigo-500 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Welcome to My Portfolio</h2>
+            <p class="text-gray-100 mb-10">Aspiring to craft captivating and seamless user experiences, a future front-end maestro in the making.</p>
+            <button type="button" class="bg-white text-indigo-500 py-2 px-6 rounded">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+            <div class="flex justify-center">
+                <img src="https://media-content.ccbp.in/ccbp_prod/media/profile_pic/4c510fb0-e59e-403c-8dc0-12a781df1e90.jpeg" alt="Your Name" class="w-32 h-32 rounded-full mb-4">
+            </div>
+            <p class="text-center">👋 Hi, I'm Teja Gulagani, an aspiring frontend developer with a strong foundation in HTML, CSS, and JavaScript. Currently a student, I'm passionate about creating user-friendly interfaces and staying updated on the latest industry trends. A fast learner and team player, I bring a positive mindset and adaptability to collaborative projects. Eager to contribute my skills to innovative web development opportunities, I can be contacted at tejababu08@gmail.com. Let's code a brighter future together! 💻✨</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-200 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2">Login Page</h3>
+                    <p>Login Pages helps users to login and create account and idetify the id to the respective Applications.</p>
+                </div>
+                <div class="bg-white p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2">Food Munch</h3>
+                    <p>A responsive Food munch pages allows us to see varitey of food and other other things allows us to order food from door-setp.</p>
+                </div>
+                <div class="bg-white p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2">Wiki Search</h3>
+                    <p>Wiki Search helps us to search any thing with a single prompt and get access go that page and details about the any topic or a person.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2 text-center">HTML</h3>
+                    <div class="progress-bar w-2/3 bg-indigo-500 rounded"></div>
+                </div>
+                <div class="bg-white p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2 text-center">CSS</h3>
+                    <div class="progress-bar w-5/6 bg-indigo-500 rounded"></div>
+                </div>
+                <div class="bg-white p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2 text-center">JAVA SCRIPT</h3>
+                    <div class="progress-bar w-2/3 bg-indigo-500 rounded"></div>
+                </div>
+                <div class="bg-white p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2 text-center">BOOTSTRAP</h3>
+                    <div class="progress-bar w-2/3 bg-indigo-500 rounded"></div>
+                </div>
+                <div class="bg-white p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2 text-center">REACT JS</h3>
+                    <div class="progress-bar w-2/3 bg-indigo-500 rounded"></div>
+                </div>
+                <div class="bg-white p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2 text-center">NODE JS</h3>
+                    <div class="progress-bar w-2/3 bg-indigo-500 rounded"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-indigo-500 py-4">
+        <div class="container mx-auto flex justify-center items-center">
+            <p class="text-white mr-4">&copy; 2023 My Portfolio. All rights reserved.</p>
+            <!-- GitHub logo and link -->
+            <a href="https://github.com/tejababu846" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-400">
+                <i class="fab fa-github mr-2"></i> GitHub
+            </a>
+            <!-- LinkedIn logo and link -->
+            <a href="https://www.linkedin.com/in/teja-gulagani-0a1338274/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-400 ml-4">
+                <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
+            </a>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
